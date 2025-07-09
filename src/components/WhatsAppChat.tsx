@@ -35,7 +35,7 @@ const WhatsAppChat = () => {
   return (
     <>
       {/* Chat Widget */}
-      <div className="fixed bottom-4 right-4 z-50 sm:bottom-6 sm:right-24">
+      <div className="fixed bottom-4 right-4 z-50 sm:bottom-6 sm:right-6">
         {/* Admin Selection Panel */}
         {isOpen && (
           <div className="mb-4 bg-white rounded-lg shadow-2xl border border-gray-200 overflow-hidden animate-scale-in w-80 sm:w-96">
@@ -101,7 +101,7 @@ const WhatsAppChat = () => {
           className={`
             h-14 w-14 rounded-full shadow-lg transition-all duration-300 
             ${isOpen 
-              ? 'bg-red-500 hover:bg-red-600 rotate-180' 
+              ? null 
               : 'bg-green-500 hover:bg-green-600 hover:scale-110'
             }
             flex items-center justify-center group
