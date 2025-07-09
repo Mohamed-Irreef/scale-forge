@@ -57,7 +57,7 @@ const Navigation = () => {
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
       isScrolled ? 'bg-sf-black/95 backdrop-blur-md shadow-lg py-2' : 'bg-transparent py-4'
     }`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 pr-10 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 sm:pr-10 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Enhanced Logo */}
           <button 
