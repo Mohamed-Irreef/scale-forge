@@ -112,7 +112,7 @@ const Contact = () => {
 
     try {
       // Send professional emails
-      const sentEmail= await axios.post('http://localhost:5000/send-email',formData);
+      const sentEmail= await axios.post('https://scale-forge.onrender.com/send-email',formData);
       if (sentEmail.status == 200) {
        // Email sent successfully
       }else{
