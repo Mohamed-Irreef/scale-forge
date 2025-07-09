@@ -15,7 +15,7 @@ const Index = () => {
   useScrollToTop();
 
   return (
-    <div className="min-h-screen bg-sf-black">
+    <div className="min-h-screen bg-sf-black home-page">
       <SplashCursor/>
       <BackgroundMusic/>
       <Navigation />

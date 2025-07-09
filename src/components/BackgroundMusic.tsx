@@ -16,7 +16,7 @@ const BackgroundMusic = () => {
             .catch((error) => {
               console.log("Autoplay blocked. Waiting for user interaction...");
 
-              // Wait for user click if autoplay is blocked
+             
               const handleUserInteraction = () => {
                 audioRef.current.play();
                 window.removeEventListener("click", handleUserInteraction);
@@ -34,7 +34,7 @@ const BackgroundMusic = () => {
   return (
     <audio
       ref={audioRef}
-      src="/audio3.mp3" // Put your mp3 file in the public folder
+      src="/audio3.mp3" 
       loop
       preload="auto"
     />
