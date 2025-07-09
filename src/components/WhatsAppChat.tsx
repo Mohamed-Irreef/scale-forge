@@ -96,7 +96,23 @@ const WhatsAppChat = () => {
         )}
 
         {/* Chat Button */}
-        
+        <Button
+          onClick={toggleChat}
+          className={`
+            h-14 w-14 rounded-full shadow-lg transition-all duration-300 
+            ${isOpen 
+              ? null 
+              : 'bg-green-500 hover:bg-green-600 hover:scale-110'
+            }
+            flex items-center justify-center group
+          `}
+        >
+          {isOpen ? (
+            <X size={24} className="text-white" />
+          ) : (
+            <MessageCircle size={24} className="text-white group-hover:animate-bounce" />
+          )}
+        </Button>
 
         {/* Notification Dot */}
         {!isOpen && (
