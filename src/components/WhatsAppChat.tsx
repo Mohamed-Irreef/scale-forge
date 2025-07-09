@@ -35,7 +35,7 @@ const WhatsAppChat = () => {
   return (
     <>
       {/* Chat Widget */}
-      <div className="fixed bottom-4 right-4 z-50 sm:bottom-6 sm:right-12">
+      <div className="fixed bottom-4 right-4 z-50 sm:bottom-6 sm:right-24">
         {/* Admin Selection Panel */}
         {isOpen && (
           <div className="mb-4 bg-white rounded-lg shadow-2xl border border-gray-200 overflow-hidden animate-scale-in w-80 sm:w-96">
