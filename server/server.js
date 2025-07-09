@@ -9,6 +9,11 @@ const PORT = 5000;
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("✅ Scale Forge Backend is Live!");
+});
+
+
 // Route to handle contact form email
 app.post("/send-email", async (req, res) => {
   const { name, email, phone, service, message } = req.body;
