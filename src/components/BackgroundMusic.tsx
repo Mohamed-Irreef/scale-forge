@@ -34,7 +34,7 @@ const BackgroundMusic = () => {
   return (
     <audio
       ref={audioRef}
-      src="/audio3.mp3" 
+      src="/audio2.mp3" 
       loop
       preload="auto"
     />
